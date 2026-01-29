@@ -78,10 +78,10 @@ docker volume ls
 Once the volume is created, you can use it with the `-v` option when running a container:
 
 ```bash
-docker run --rm -d -p 8095:80 --name web -v web:/usr/share/nginx/html nginx
+docker run --rm -d -p 8095:80 --name web -v nginx-data:/usr/share/nginx/html nginx
 ```
 
-In this example, we are creating a container named `web` that uses the `nginx` image. The `-v web:/usr/share/nginx/html` option tells Docker to mount the `nginx-data` volume to the `/usr/share/nginx/html` directory inside the container.
+In this example, the `nginx-data` volume is mounted to the `/usr/share/nginx/html` directory inside the container.
 
 
 ### Step 3: Adding files to the volume
@@ -89,7 +89,7 @@ In this example, we are creating a container named `web` that uses the `nginx` i
 Now that we have our volume set up, we can add files to the `nginx-data` volume. You can do this by running a temporary container that mounts the volume and allows you to copy files into it:
 
 ```bash
-docker cp ./tek2/nginx-example/index.html nginx-data:/usr/share/nginx/html/
+docker cp ./tek2/nginx-example/index.html web:/usr/share/nginx/html/
 ```
 
 This will add the file to the `nginx-data` volume.
