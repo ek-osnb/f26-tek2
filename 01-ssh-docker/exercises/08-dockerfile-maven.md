@@ -36,9 +36,9 @@ Create a file named `Dockerfile` in the root of your Maven project directory. Th
 
 ```dockerfile
 # Use the official Maven image as the base image
-FROM maven:3.9.9-eclipse-temurin-21
+FROM maven:3.9.12-eclipse-temurin-25   
 # maven - This is the official Maven image from Docker Hub.
-# 3.9.9-eclipse-temurin-21 - this is the Maven version and 21 is the JDK version.
+# 3.12-eclipse-temurin-25 - this is the Maven version and 21 is the JDK version.
 
 # Set the working directory
 WORKDIR /app
