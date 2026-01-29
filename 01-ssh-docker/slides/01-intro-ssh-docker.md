@@ -32,7 +32,7 @@ section.lead h3 {
 **Projects**: Full stack project, AI Project, Semester project
 
 **Exam**: To attend the exam, you must have handed in and presented all projects
-- 20 min oral presentation: approx. 9. - 13. january 2026
+- 20 min oral presentation: TBD
 - Exam questions are known in advance
 
 **Guest lectures during the semester**: 
