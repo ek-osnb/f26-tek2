@@ -28,9 +28,9 @@ Inside the root directory of the project, create a new file named `Dockerfile` (
 First we need to use a **base image**, we will use the [maven](https://hub.docker.com/layers/library/maven/3.9.11-eclipse-temurin-21/images/sha256-3e8012d0a4a48f366dc8cfade527db0c2491e5cf24484bc644801d87e5234ac3) base image. Add the following line to the `Dockerfile`:
 
 ```dockerfile
-FROM maven:3.9.11-eclipse-temurin-21
+FROM maven:3.9.12-eclipse-temurin-25
 ```
-Here `maven:3.9.11` specifies the maven version and `eclipse-temurin-21` specifies the JDK version.
+Here `maven:3.9.12` specifies the maven version and `eclipse-temurin-25` specifies the JDK version.
 
 ## Step 2: Add application files
 
@@ -98,7 +98,7 @@ This command will run a new container (in the background) from the `spring-api` 
 ## Full Dockerfile
 
 ```dockerfile
-FROM maven:3.9.11-eclipse-temurin-21
+FROM maven:3.9.12-eclipse-temurin-25
 
 WORKDIR /app
 COPY pom.xml .
