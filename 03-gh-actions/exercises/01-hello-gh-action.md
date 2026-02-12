@@ -5,7 +5,7 @@ The goal of this exercise is to create a simple GitHub Action that prints "Hello
 
 ## Step 1: setup
 
-Fork this repository to your own GitHub account: https://github.com/ek-osnb/spring-ghcr
+Fork this repository to your own GitHub account: https://github.com/ek-osnb/spring-ghcr-starter
 
 Clone your forked repository to your local machine:
 ```bash
