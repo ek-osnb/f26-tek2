@@ -27,7 +27,7 @@ jobs:
             distribution: 'temurin'
 
       - name: Run tests
-        run: mvn test
+        run: mvn -B test
 ```
 The `on: workflow_call` event allows this workflow to be called by other workflows.
 
