@@ -50,7 +50,7 @@ mkdir db
 Then, download the `compose.prod.db.yml` file over to the `db` directory:
 
 ```bash
-wget https://raw.githubusercontent.com/ek-osnb/cloud-starter/refs/heads/main/compose.prod.db.yml -O db/compose.prod.db.yml
+wget https://raw.githubusercontent.com/ek-osnb/cloud-starter/refs/heads/main/compose.prod.db.yml -O compose.prod.db.yml
 ```
 
 This will download the `compose.prod.db.yml` file from the GitHub repository and save it in the `db` directory. This file contains the Docker Compose configuration for the MySQL database.
@@ -58,7 +58,7 @@ This will download the `compose.prod.db.yml` file from the GitHub repository and
 Download the sample `.env` file and save it in the `db` directory:
 
 ```bash
-wget https://raw.githubusercontent.com/ek-osnb/cloud-starter/refs/heads/main/.env -O db/.env
+wget https://raw.githubusercontent.com/ek-osnb/cloud-starter/refs/heads/main/.env -O .env
 ```
 
 This will download the `.env` file from the GitHub repository and save it in the `db` directory. This file contains the environment variables for the MySQL database.
